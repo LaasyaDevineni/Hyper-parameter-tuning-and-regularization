@@ -20,35 +20,53 @@ To run this project, ensure you have the following dependencies installed:
 
 ```bash
 pip install numpy matplotlib keras
+```
 
 ## Model Architecture
+
 The MLP model consists of:
 
-Input layer (784 neurons)
-Multiple hidden layers with:
-Activation functions: ELU, ReLU, and Sigmoid
-Weight initialization: He Normal
-Regularization techniques: Batch Normalization and Dropout
-Output layer (10 neurons for classification)
+- **Input layer** (784 neurons)
+- **Multiple hidden layers** with:
+  - **Activation functions**: ELU, ReLU, and Sigmoid
+  - **Weight initialization**: He Normal
+  - **Regularization techniques**: Batch Normalization and Dropout
+- **Output layer** (10 neurons for classification)
 
-##Techniques Applied
-Weight Initialization: He Normal initialization to address the vanishing gradient problem.
-Activation Functions:
-Sigmoid
-ReLU
-ELU
-Optimizers:
-Stochastic Gradient Descent (SGD)
-Adam
-Regularization:
-Dropout (20% rate)
-Batch Normalization
-Results
-Test Accuracy:
-Initial naive MLP: ~11.3%
-After implementing He Normal Initialization: ~37.2%
-After using ReLU activation: ~92.2%
-After applying Adam optimizer: ~95.8%
-With Batch Normalization: ~96.5%
-With Dropout Regularization: ~88.9%
-Note: The above accuracies are based on various configurations applied throughout the project.
+## Techniques Applied
+
+- **Weight Initialization**: *He Normal* initialization to address the vanishing gradient problem.
+- **Activation Functions**:
+  - *Sigmoid*
+  - *ReLU*
+  - *ELU*
+- **Optimizers**:
+  - *Stochastic Gradient Descent (SGD)*
+  - *Adam*
+- **Regularization**:
+  - *Dropout* (20% rate)
+  - *Batch Normalization*
+
+## Results
+
+- **Test Accuracy**:
+  - *Initial naive MLP*: ~11.3%
+  - *After implementing He Normal Initialization*: ~37.2%
+  - *After using ReLU activation*: ~92.2%
+  - *After applying Adam optimizer*: ~95.8%
+  - *With Batch Normalization*: ~96.5%
+  - *With Dropout Regularization*: ~88.9%
+
+*Note: The above accuracies are based on various configurations applied throughout the project.*
+
+## Visualization
+
+The training and validation accuracy are plotted for each configuration to visualize the model's performance over epochs. 
+
+- **Training Accuracy**: The accuracy achieved by the model on the training dataset during training.
+- **Validation Accuracy**: The accuracy achieved by the model on the validation dataset, indicating how well the model generalizes to unseen data.
+
+The plots illustrate the effectiveness of various techniques implemented throughout the project, including:
+- *Weight initialization methods*
+- *Activation functions*
+- *Regularization techniques*
