@@ -47,6 +47,18 @@ The MLP model consists of:
   - *Dropout* (20% rate)
   - *Batch Normalization*
 
+## Visualization
+
+The training and validation accuracy are plotted for each configuration to visualize the model's performance over epochs. 
+
+- **Training Accuracy**: The accuracy achieved by the model on the training dataset during training.
+- **Validation Accuracy**: The accuracy achieved by the model on the validation dataset, indicating how well the model generalizes to unseen data.
+
+The plots illustrate the effectiveness of various techniques implemented throughout the project, including:
+- *Weight initialization methods*
+- *Activation functions*
+- *Regularization techniques*
+
 ## Results
 
 - **Test Accuracy**:
@@ -59,14 +71,3 @@ The MLP model consists of:
 
 *Note: The above accuracies are based on various configurations applied throughout the project.*
 
-## Visualization
-
-The training and validation accuracy are plotted for each configuration to visualize the model's performance over epochs. 
-
-- **Training Accuracy**: The accuracy achieved by the model on the training dataset during training.
-- **Validation Accuracy**: The accuracy achieved by the model on the validation dataset, indicating how well the model generalizes to unseen data.
-
-The plots illustrate the effectiveness of various techniques implemented throughout the project, including:
-- *Weight initialization methods*
-- *Activation functions*
-- *Regularization techniques*
